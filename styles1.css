@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/564x/5c/f2/66/5cf2660af5f4214def7166dc7a7c8062.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex; 
+    justify-content: center;
+}
+
+label{
+    display: inline-block;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+input{
+    border: none;
+    width: 100%;
+    border-radius: 7px;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+input::placeholder:focus{
+    color: #fff;
+}
+
+input:focus{
+    color: #fff;
+    background-color: rgba(2, 8, 26, 0.801);
+    border: none;
+}
+
+p{
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+form{
+    font-family: monospace;
+}
+
+#button{
+    text-align: center;
+}
+
+button{
+    width: 30%;
+    padding: 15px;
+    border-radius: 18px;
+    background-color: rgba(52, 71, 134, 0.116);
+    border: 2px solid rgb(236, 234, 234);
+}
+
+button:hover{
+    background-color: rgba(24, 49, 129, 0.349);
+    cursor: pointer;
+}
+
+
+
+
+.container{
+    box-shadow: 0 5px 30px rgba(22, 21, 21, 0.534);
+    color: #fff;
+    margin-top: 24vh;
+    margin-bottom: 40vh;
+    padding: 30px;
+    background-color: rgba(31, 119, 146, 0.219);
+    width: 45%;
+    border-radius: 8px;
+}
+
+#designer{
+    color: #000;
+    font-family: cursive;
+}
+
+
+select{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 7px;
+}
+
+@media only screen and (max-width:990px){
+    .container{
+        width: 90%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+}
