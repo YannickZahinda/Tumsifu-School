@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/d614fc8c85.js" crossorigin="anonymous"></script>
+    <title>Tumsifu</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <figure>
+                <img src=" https://hibya.com/images/2021_07/2021_07_08/tmsf-baskanligina-atama-11053_m2.jpg" alt="Logo" id="logo">
+                <div id="title">Complexe Scolaire TUMSIFU</div>
+            </figure>
+            <div class="menu-lines" id="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <nav>
+                <div class="nav-link"><a href="#">ABOUT US</a></div>
+                <div class="nav-link">
+                    <a href="#" id="link_2"><span>PROGRAMMES</span> </a>
+                    <div id="content"></div>
+                </div>
+                <div class="nav-link"><a href="#">APPLICATIONS</a></div>
+            </nav>
+            
+        </header>
+        <main>
+            <div class="inscription-text">
+                <h1>Inscription 2021-2022</h1>
+                <p>
+                    Les admissions sont ouvertes pour les niveaux primaires et secondaires <br>
+                    <span>Inscrivez vos enfants à Tumsifu;</span>
+                </p>
+                <form action="./index1.html">
+                    <button>INSCRIVEZ-VOUS MAINTENANT</button>
+                </form>
+            </div> 
+            <div id="menu-container"></div>   
+        </main>
+        <footer>
+            <p>Copyrigh &copy; <a href="https://www.gzahinda@gmail.com">gzahinda@gmail.com</a> <br> <span id="designer-name">Design by Yannick Zahinda</span> </p>
+        </footer>
+    </div>
+    <script>
+        const Menu = document.getElementById("menu");
+        Menu.addEventListener("click", () => {
+            var navBar = document.querySelector("nav");
+            navBar.classList.toggle("active");
+            navBar.style.transition = "3s ease";
+        })
+
+        let fullTimeContent = document.getElementById("content");
+
+        const linkAdds = document.getElementById("link_2");
+        linkAdds.addEventListener('mouseover', () =>{
+            setTimeout(()=>{
+                
+            fullTimeContent.innerHTML = `<ul class="program-list"><li>Program day 1</li>
+            <li>Program day 2</li><li>Program day 3</li></ul>`;
+            fullTimeContent.style.transition = "4s ease";
+            
+        
+            },500);
+
+            (function(){
+                linkAdds.addEventListener("mouseout", () =>{
+                    fullTimeContent.innerHTML = "";
+                })
+            })();
+            
+        });
+
+
+    </script>
+</body>
+</html>
